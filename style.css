@@ -1,0 +1,99 @@
+body {
+  background-color: #f3f4f5;
+}
+.navbar-brand {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.jumbotron {
+  padding: auto;
+  background-image: url(../HTML/img/1.jpeg);
+  padding-top: 50px;
+  width: auto;
+  text-align: center;
+  color: #25274d;
+
+  font-weight: bold;
+}
+.about {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  padding-top: 30px;
+  margin-top: 100 px;
+  color: #25274d;
+}
+.container1 {
+  background-color: #f3f4f5;
+  text-align: center;
+  margin-top: 10px;
+}
+.container2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  margin-top: 50px;
+}
+.container1 img {
+  width: 280px;
+  margin-top: 30px;
+  border-width: 100px;
+}
+.mystory {
+  text-align: center;
+  font-weight: bold;
+  color: #25274d;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.carousel-inner a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
+.allstories {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 50px;
+}
+#mystory {
+  background-color: #cfd1ff;
+}
+.contactme {
+  text-align: center;
+  font-weight: bold;
+  color: #25274d;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footer {
+  padding-top: 20px;
+  text-align: center;
+  background-color: #25274d;
+}
+.galery {
+  text-align: center;
+  font-weight: bold;
+  color: #25274d;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.galery-img {
+  width: 100%;
+}
+#galery .row > * {
+  padding: 0;
+}
+.carousel .carousel-item {
+  transition-duration: 3s;
+}
