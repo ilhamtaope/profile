@@ -1,55 +1,53 @@
 body {
   background-color: #f3f4f5;
 }
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .navbar-brand {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
 }
-.navbar-nav {
-  margin-left: auto;
+.mycarousel {
+  padding-top: 56px;
 }
-.jumbotron {
-  padding: auto;
-  background-image: url(../HTML/img/1.jpeg);
-  padding-top: 50px;
-  width: auto;
+.carousel-caption {
   text-align: center;
-  color: #25274d;
-
+  color: #ffffff;
+  bottom: 8vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.carousel-caption h5 {
   font-weight: bold;
+  font-size: 5vw;
+  text-align: center;
+}
+
+.carousel-caption p {
+  text-align: center;
+  font-style: italic;
+  font-size: 3vw;
 }
 .about {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: bold;
-  padding-top: 30px;
-  margin-top: 100 px;
+  margin-top: -18vw;
+  margin-bottom: 8vw;
   color: #25274d;
-}
-.container1 {
-  background-color: #f3f4f5;
-  text-align: center;
-  margin-top: 10px;
-}
-.container2 {
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: center;
-  font-weight: bold;
-  font-family: monospace;
-  margin-top: 50px;
-}
-.container1 img {
-  width: 280px;
-  margin-top: 30px;
-  border-width: 100px;
 }
 .mystory {
   text-align: center;
-  font-weight: bold;
   color: #25274d;
-  padding-top: 30px;
-  margin-bottom: 30px;
+  margin-top: -10vw;
+  margin-bottom: 8vw;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .carousel-inner a {
@@ -57,15 +55,20 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+
 .allstories {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   font-size: 15px;
   padding-bottom: 50px;
+  margin-bottom: -1px;
 }
 #mystory {
   background-color: #cfd1ff;
+}
+button :hover {
+  color: aqua;
 }
 .contactme {
   text-align: center;
@@ -75,11 +78,7 @@ body {
   margin-bottom: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.footer {
-  padding-top: 20px;
-  text-align: center;
-  background-color: #25274d;
-}
+
 .galery {
   text-align: center;
   font-weight: bold;
@@ -94,6 +93,76 @@ body {
 #galery .row > * {
   padding: 0;
 }
-.carousel .carousel-item {
-  transition-duration: 3s;
+footer {
+  background-color: #25274d;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-left: auto;
+  color: #ffffff;
+}
+.footercontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.footercontent h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footercontent p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  flex-basis: 100%;
+  margin-left: -50px;
+}
+.socials li {
+  display: flex;
+  flex-basis: auto;
+  margin: 25px;
+}
+.socials a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.socials a i {
+  font-size: 1.1 rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: aqua;
+}
+.footerbtm {
+  background-color: #0f1022;
+  width: 100vw;
+  padding: 9px 0;
+  text-align: center;
+}
+.footerbtm p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.backbtn {
+  font-size: 40px;
+  display: flex;
+}
+.backbtn a {
+  color: #f3f4f5;
+}
+.ContainerP h1 {
+  font-size: 3vw;
+  text-align: center;
+  padding-bottom: 73%;
+  margin-top: 18%;
 }
