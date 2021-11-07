@@ -228,29 +228,33 @@
     <div class="contactme" data-aos="fade-up" data-aos-duration="2000">
       <h3 style="font-size: 5vw;"> Contact Me</h3>
     </div>
-    <form style="width: fit-content; margin: auto;">
+    <form style="width: fit-content; margin: auto;" name="contactform">
+      <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+        <strong>Pesan diterima!</strong> Kami akan segera merespon pesan anda melalui email
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Name</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
 
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Email address</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <label for="email" class="form-label">Email address</label>
+        <input type="text" class="form-control" id="email" name="email">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
 
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Message</label>
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-          style="height: 100px"></textarea>
+        <label for="pesan" class="form-label">Message</label>
+        <textarea class="form-control" placeholder="Leave a comment here" id="pesan" style="height: 100px"
+          name="pesan"></textarea>
         <label for="floatingTextarea2">Comments</label>
       </div>
-      <div class="mb-3 mt-4 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary" style="background-color: #25274d;">Submit</button>
+      <button type="submit" class="btn btn-primary btn-kirim" style="background-color: #25274d;">Submit</button>
+      <button class="btn btn-primary btn-loading d-none" style="background-color: #25274d;" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Loading...
+      </button>
     </form>
     <br><br><br>
   </section>
@@ -301,7 +305,34 @@
       })
     })
   </script>
-
+  <!--  sumbit form -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyPyT2Nxv3n-yLgwAJRUHFlGjJD4NBEgmKo3TYI5h1AFBGRbNreaLzP-L7y4oa2igDn/exec'
+    const form = document.forms['contactform']
+    const btnkirim = document.querySelector('.btn-kirim');
+    const btnloading = document.querySelector('.btn-loading');
+    const myalert = document.querySelector('.my-alert');
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      // ketika submit diklik
+      // tampilkan loading
+      btnloading.classList.toggle('d-none');
+      btnkirim.classList.toggle('d-none');
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          // tampilkan tombol kirim
+          btnloading.classList.toggle('d-none');
+          btnkirim.classList.toggle('d-none');
+          // tampilkan alert
+          myalert.classList.toggle('d-none');
+          //reset form
+          form.reset();
+          console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <!--  akhir sumbit form -->
   <!-- akhir javascript -->
 </body>
 
