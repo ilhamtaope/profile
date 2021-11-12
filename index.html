@@ -48,19 +48,6 @@
           <li class="nav-item">
             <a class="nav-link " href="#contactme">Contact Me</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
         </ul>
       </div>
     </div>
@@ -246,17 +233,29 @@
   <!-- akhir video -->
 
   <!--  contact me-->
-  <!-- akhir contact me -->
 
-  <!-- form coba -->
-
-  <form id="contactform" action="https://formsubmit.io/send/ilhammuh084@gmail.com" method="POST">
-    <input name="email" type="email" id="email">
-    <input name="pesan" type="text" id="pesan">
+  <form id="contactform" action="https://formsubmit.io/send/ilhammuh084@gmail.com" method="POST"
+    style="margin-left: 30%; margin-right: 30%;">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="nama" class="form-label">Nama</label>
+      <input type="nama" name="nama" class="form-control" id="nama">
+    </div>
+    <label for="nama" class="form-label">Pesan</label>
+    <div class="form-floating">
+      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+        style="height: 100px"></textarea>
+    </div>
+    <br>
     <input name="_redirect" type="hidden" id="name" value="https://muhammadilham9.github.io/Page.html">
-    <input value="Submit" type="submit">
+    <input value="Submit" type="submit" style="background-color: #25274d; color: aliceblue;">
   </form>
-  <!-- akhir form coba -->
+  <br> <br>
+  <!-- akhir contact me -->
 
   <!-- footer -->
 
