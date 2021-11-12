@@ -48,6 +48,19 @@
           <li class="nav-item">
             <a class="nav-link " href="#contactme">Contact Me</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
         </ul>
       </div>
     </div>
@@ -233,46 +246,16 @@
   <!-- akhir video -->
 
   <!--  contact me-->
-  <section id="contactme">
-    <div class="contactme" data-aos="fade-up" data-aos-duration="2000">
-      <h3 style="font-size: 5vw;"> Contact Me</h3>
-    </div>
-    <div class="text-center">
-    </div>
-    <form style="width: fit-content; margin: auto;" name="contactform">
-      <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert" value="Reload Page"
-        onClick="window.location.reload();return false;">
-        <strong>Pesan diterima!</strong>
-        <h6>Klik X untuk mengirim pesan baru :)</h6>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-      <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
-
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email address</label>
-        <input type="text" class="form-control" id="email" name="email">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-      </div>
-
-      <div class="mb-3">
-        <label for="pesan" class="form-label">Message</label>
-        <textarea class="form-control" placeholder="Leave a comment here" id="pesan" style="height: 100px"
-          name="pesan"></textarea>
-        <label for="floatingTextarea2">Comments</label>
-      </div>
-      <button type="submit" class="btn btn-primary btn-kirim" style="background-color: #25274d;">Submit</button>
-      <button class="btn btn-primary btn-loading d-none" style="background-color: #25274d;" type="button" disabled>
-        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-        Loading...
-      </button>
-
-    </form>
-    <br><br><br>
-  </section>
   <!-- akhir contact me -->
+
+  <!-- form coba -->
+
+  <form id="contactform" action="https://formsubmit.io/send/ilhammuh084@gmail.com" method="POST">
+    <input name="email" type="email" id="email">
+    <input name="pesan" type="text" id="pesan">
+    <input value="Submit" type="submit">
+  </form>
+  <!-- akhir form coba -->
 
   <!-- footer -->
 
@@ -319,36 +302,6 @@
       })
     })
   </script>
-  <!--  sumbit form -->
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyPyT2Nxv3n-yLgwAJRUHFlGjJD4NBEgmKo3TYI5h1AFBGRbNreaLzP-L7y4oa2igDn/exec'
-    const form = document.forms['contactform']
-    const btnkirim = document.querySelector('.btn-kirim');
-    const btnloading = document.querySelector('.btn-loading');
-    const myalert = document.querySelector('.my-alert');
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      // ketika submit diklik
-      // tampilkan loading
-      btnloading.classList.toggle('d-none');
-      btnkirim.classList.toggle('d-none');
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-          // tampilkan tombol kirim
-          btnloading.classList.toggle('d-none');
-          btnkirim.classList.toggle('d-none');
-          // tampilkan alert
-          myalert.classList.toggle('d-none');
-          //reset form
-          form.reset();
-          //reload page
-
-          console.log('Success!', response)
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-  <!--  akhir sumbit form -->
   <!-- akhir javascript -->
 </body>
 
