@@ -161,10 +161,9 @@ footer {
   color: #f3f4f5;
 }
 .ContainerP h1 {
-  font-size: 3vw;
+  font-size: 2vw;
   text-align: center;
-  padding-bottom: 73%;
-  margin-top: 18%;
+  margin-top: 8%;
 }
 
 .footerbtm p {
@@ -174,4 +173,19 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.thanks {
+  font-size: 2vw;
+  text-align: center;
+}
+.btn-text-center {
+  text-align: center;
+}
+.tombol:hover {
+  color: aqua;
+}
+.tombol {
+  border-radius: 15px;
+  color: #ffffff;
+  margin: 30px;
 }
