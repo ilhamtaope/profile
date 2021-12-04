@@ -24,12 +24,12 @@
   <script></script>
 </head>
 
-
 <body id="home">
   <!-- navbar -->
-  <nav class="navbar fixed-top navbar-expand-sm navbar-dark " style="background-color: #25274d;">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color:transparent;">
     <div class="container">
-      <a class="navbar-brand" href="#">Muhammad Ilham</a>
+      <img src="img/nav1.png" alt="nav1.png" style="width: 50px; margin-right: 10px;">
+      <a class="navbar-brand" href="home">Muhammad Ilham</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,21 +40,72 @@
             <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#aboutme">About Me</a>
+            <a class="nav-link active" href="#aboutme">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#mystory">My Story</a>
+            <a class="nav-link active" href="#mystory">My Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#contactme">Contact Me</a>
+            <a class="nav-link active" href="#contactme">Contact Me</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- akhir navbar -->
+  <!-- jumbotron -->
+  <section id="jumbotron">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/banner.png" class="d-block w-100" alt="banner.png">
+        <div class="carousel-caption" data-aos="flip-up" data-aos-duration="2000">
+          <h5> Welcome</h5>
+          <p> “Do not fear failure but rather fear not trying.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- akhir jumbotron -->
+  <!-- about me -->
+  <section id="aboutme">
+    <div class="about">
+      <h1 style="font-size: 4vw;">About Me</h1>
+    </div>
+    <div class="clearfix" style="margin-left: 10vw; margin-right: 10vw;">
+      <img src="about/gambar1.PNG" class="col-5 float-end mb-3 ms-3" alt="gambar1.PNG">
+      <div data-aos="fade-right" data-aos-duration="3000">
+        <h4 style=" font-size: 3vw; color: #231f20;font-family:arial;"> Muhammad Ilham
+        </h4>
+        <div class="btnabout">
+          <a href="Resume/Resume_Muhammad Ilham.pdf" download="Resume_Muhammad Ilham.pdf"><button class="btn"
+              type="button">Download CV</button></a>
+        </div>
+        <hr>
+        <p style="font-size: 2vw;text-align: justify;
+        text-justify: inter-word;">
+          Hallo! I am Muhammad Ilham, a fresh graduate majoring in Electrical Engineering (Informatics) from
+          the
+          University of Muhammadiyah Malang.
+        </p>
+        <p style="font-size: 2vw;text-align: justify;
+        text-justify: inter-word;">
+          When I was in college, I love to explore new things by being a productive student. I've been
+          working in fintech company for about 2 years and I was also participating in international student
+          exchange.
 
-  <!-- Carousel -->
+        </p>
+        <p style=" font-size: 2vw; margin-bottom: 2px;text-align: justify; text-justify: inter-word;">
+          I currently keep improving my skill in designing website using HTML,CSS and basic Java Script. Now,
+          I am
+          open
+          to start
+          my profesional career
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- akhir about me -->
+  <!-- carousel -->
   <section class="mycarousel">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -103,180 +154,213 @@
     </div>
   </section>
   <!-- akhir Carousel -->
-  <!-- about me -->
-  <section id="aboutme">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#c3c6ff" fill-opacity="1"
-        d="M0,224L60,202.7C120,181,240,139,360,149.3C480,160,600,224,720,224C840,224,960,160,1080,144C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-      </path>
-    </svg>
-    <div class="about" data-aos="fade-up" data-aos-duration="2000">
-      <h3 style="font-size: 5vw;"> About Me</h3>
-    </div>
-    <div class="clearfix" style="margin: 8vw;">
-      <img src="about/gambar1.PNG" class="col-5 float-end mb-3 ms-3" alt="gambar1.PNG">
-      <div class="isiabout" data-aos="flip-left" data-aos-duration="3000">
-        <h1 style="font-size: 3vw; color: #25274d;"> Muhammad Ilham </h1>
-        <hr>
-        <p style="font-size: 2vw;">
-          I recently graduate from the University of Muhammadiyah Malang, Indonesia. Here I start
-          to build my own website and writing my stories and experiences.
-        </p>
-        <p style="font-size: 2vw;">
-          With this youth spirit, I love to challenge myself by exploring new things in order to expand my mind and
-          learn something new that
-          will be a story in my life.
-        </p>
-        <p style="font-size: 2vw; margin-bottom: 2px;">
-          I enjoy to listen the Hip-hop/Rap music, but I certainly can not do the rap freestyle, sing hip-hop music or
-          whatever. I just love to listen them because it can change my mood or probably yours.
-      </div>
-    </div>
-    <div class="text-center d-md-block" style="margin-top: -30px ; ">
-      <a href=" https://www.instagram.com/iammilham_/"> <button class="btn btn-primary text"
-          style="background-color: #25274d; width:  auto; font-size: 13px; margin-top: 2vw;">
-          Let's Connect
-        </button></a>
-    </div>
-  </section>
-  <!-- akhir about me -->
   <!-- my story -->
-  <section id="mystory" data-aos="fade-up" data-aos-duration="2000">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#f3f4f5" fill-opacity="1"
-        d="M0,160L205.7,288L411.4,256L617.1,96L822.9,160L1028.6,128L1234.3,288L1440,224L1440,0L1234.3,0L1028.6,0L822.9,0L617.1,0L411.4,0L205.7,0L0,0Z">
-      </path>
-    </svg>
-    <h1 class="mystory" style="font-size: 5vw;"> My Story</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1300">
-            <img src="mystory/gambar1.JPG" class="card-img-top" alt="mystory/gambar1.JPG">
-            <div class="card-body">
-              <h5 class="card-title">Story From Porto</h5>
-              <p class="card-text"> City of the golden river and the heritage building</p>
-              <a href="Page.html" class="btn btn-primary" style="background-color: #25274d;">Read More</a>
+  <div class="container-mystory">
+    <section id="mystory">
+      <h1 class="mystory" style="font-size: 4vw;"> My Story</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1300">
+              <img src="mystory/gambar1.JPG" class="card-img-top" alt="mystory/gambar1.JPG">
+              <div class="card-body">
+                <h5 class="card-title">Story From Porto</h5>
+                <p class="card-text"> City of the golden river and the heritage building</p>
+                <a href="Page.html" class="btn btn-primary" style="background-color: #2a476d;">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
+              <img src="mystory/gambar2.JPG" class="card-img-top" alt="gambar2.JPG">
+              <div class="card-body">
+                <h5 class="card-title">Study in Portugal</h5>
+                <p class="card-text">Study abroad during a pandemic Covid 19</p>
+                <a href="Page.html" class="btn btn-primary" style="background-color: #2a476d;">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
+              <img src="mystory/gambar3.jpg" class="card-img-top" alt="gambar3.jpg">
+              <div class="card-body">
+                <h5 class="card-title">TF-Scale SIngapore</h5>
+                <p class="card-text"> A student exchange program Singapore Polytechnic</p>
+                <a href="Page.html" class="btn btn-primary" style="background-color: #2a476d;">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
+              <img src="mystory/gambar4.jpg" class="card-img-top" alt="gambar4.JPEG">
+              <div class="card-body">
+                <h5 class="card-title">Student Ambassador Team</h5>
+                <p class="card-text"> Working in FinTech Start-Up (Cicil.co.id)</p>
+                <a href="Page.html" class="btn btn-primary" style="background-color: #2a476d;">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
+              <img src="mystory/gambar5.jpg" class="card-img-top" alt="gambar5.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Touchdown Amsterdam</h5>
+                <p class="card-text"> My first time ever arrived in Europe</p>
+                <a href="Page.html" class="btn btn-primary" style="background-color: #2a476d;">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
+              <img src="mystory/gambar6.jpg" class="card-img-top" alt="gambar6.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Lebaran abroad</h5>
+                <p class="card-text"> Celebrating the EID with our international friends </p>
+                <a href="Page.html" class="btn btn-primary" style="background-color: #2a476d;">Read More</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
-            <img src="mystory/gambar2.JPG" class="card-img-top" alt="gambar2.JPG">
-            <div class="card-body">
-              <h5 class="card-title">Study in Portugal</h5>
-              <p class="card-text">Study abroad during a pandemic Covid 19</p>
-              <a href="Page.html" class="btn btn-primary" style="background-color: #25274d;">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
-            <img src="mystory/gambar3.jpg" class="card-img-top" alt="gambar3.jpg">
-            <div class="card-body">
-              <h5 class="card-title">TF-Scale SIngapore</h5>
-              <p class="card-text"> A student exchange program Singapore Polytechnic</p>
-              <a href="Page.html" class="btn btn-primary" style="background-color: #25274d;">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
-            <img src="mystory/gambar4.jpg" class="card-img-top" alt="gambar4.JPEG">
-            <div class="card-body">
-              <h5 class="card-title">Student Ambassador Team</h5>
-              <p class="card-text"> Working in FinTech Start-Up (Cicil.co.id)</p>
-              <a href="Page.html" class="btn btn-primary" style="background-color: #25274d;">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
-            <img src="mystory/gambar5.jpg" class="card-img-top" alt="gambar5.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Touchdown Amsterdam</h5>
-              <p class="card-text"> My first time ever arrived in Europe</p>
-              <a href="Page.html" class="btn btn-primary" style="background-color: #25274d;">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
-            <img src="mystory/gambar6.jpg" class="card-img-top" alt="gambar6.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Lebaran abroad</h5>
-              <p class="card-text"> Celebrating the EID with our international friends </p>
-              <a href="Page.html" class="btn btn-primary" style="background-color: #25274d;">Read More</a>
-            </div>
-          </div>
-        </div>
+        <br>
       </div>
-      <br>
-      <h2 class="allstories">
-        </style><a href="Page.html" style="color:#25274d; text-decoration: none ;"> View more stories <i
-            class="bi bi-arrow-right-circle-fill"></i></a></h2>
-    </div>
-  </section>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#cfd1ff" fill-opacity="1"
-      d="M0,288L0,256L180,256L180,160L360,160L360,224L540,224L540,128L720,128L720,192L900,192L900,288L1080,288L1080,160L1260,160L1260,288L1440,288L1440,0L1260,0L1260,0L1080,0L1080,0L900,0L900,0L720,0L720,0L540,0L540,0L360,0L360,0L180,0L180,0L0,0L0,0Z">
-    </path>
-  </svg>
-  <!-- akhir my story -->
-  <!-- video -->
-  <div class="video" data-aos="fade-up" data-aos-duration="2000">
-    <video controls="true" width="65%" height="55%">
-      <source src="Video/video1.mp4">
-    </video>
+    </section>
   </div>
-  <br><br><br>
-  <!-- akhir video -->
-
+  <!-- akhir my story -->
   <!--  contact me-->
   <section id="contactme">
-    <h1 class="contactme" style="font-size: 5vw;"> Contact Me</h1>
-    <form id="contactform" action="https://formsubmit.io/send/ilhammuh084@gmail.com" method="POST"
-      style="margin-left: 30%; margin-right: 30%;">
-      <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <h1 class="contactme" style="font-size: 4vw;"> Contact Me</h1>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <!-- video -->
+          <div class="video" data-aos="fade-right" data-aos-duration="2000">
+            <video controls="true" width="70%" height="70%"
+              style="margin-left: 15%; margin-right: 15%; margin-bottom: 30px;">
+              <source src="Video/video1.mp4">
+            </video>
+          </div>
+          <!-- akhir video -->
+        </div>
+        <div class="col-md-4">
+          <form id="contactform" action="https://formsubmit.io/send/ilhammuh084@gmail.com" method="POST"
+            style="margin-left: 10%; margin-right: 10%;">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
+                style="border-radius: 20px;">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="nama" name="nama" class="form-control" id="nama" style="border-radius: 20px;">
+            </div>
+            <div class=" mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea type="pesan" name="pesan" class="form-control" id="pesan"
+                style="height: 100px; border-radius: 20px;"></textarea>
+            </div>
+            <input name="_redirect" type="hidden" id="name" value="https://ilhamtaope.github.io/profile/thanks.html">
+            <a class="btn btn-primary btn-lg" href="#" role="button"
+              style="background-color:  #2a476d; border-radius: 50px;">Submit</a>
+          </form>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="nama" class="form-label">Nama</label>
-        <input type="nama" name="nama" class="form-control" id="nama">
-      </div>
-      <div class="mb-3">
-        <label for="pesan" class="form-label">Pesan</label>
-        <textarea type="pesan" name="pesan" class="form-control" id="pesan" style="height: 100px"></textarea>
-      </div>
-      <input name="_redirect" type="hidden" id="name" value="https://ilhamtaope.github.io/profile/thanks.html">
-      <button type="submit" style="background-color: #25274d; color: aliceblue; border-radius: 10px;">Submit</button>
-    </form>
-    <br> <br>
+    </div>
   </section>
   <!-- akhir contact me -->
 
-  <!-- footer -->
+  <!-- Footer -->
+  <footer class="text-center text-lg-start " style="background-color: rgb(22, 21, 21) ;color:gray; ">
 
-  <footer>
-    <div class="footercontent">
-      <div class=backbtn>
-        <a href="#home"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    <!-- Section: Links  -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <img src="img/nav1.png" alt="nav1.png" style="width: 150px;">
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 ">
+              Social Media
+            </h6>
+            <div class="sosmed">
+              <p>
+                <a href="https://www.instagram.com/iammilham_/"><i class="bi bi-instagram">
+                    Instagram</i></a>
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/in/muhammadilham06/"><i class="bi bi-linkedin"> Linkedin</i></a>
+              </p>
+              <p>
+                <a href="#!"><i class="bi bi-twitter"> Twitter</i></a>
+              </p>
+              <p>
+                <a href="#!"><i class="bi bi-facebook"> Facebook</i></a>
+              </p>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <div class="sosmedl">
+              <p>
+                <a href="#!">stuktur organisasi</a>
+              </p>
+              <p>
+                <a href="#!">event</a>
+              </p>
+              <p>
+                <a href="#!">help</a>
+              </p>
+              <p>
+                <a href="#!">contact me</a>
+              </p>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p>
+              <i class="fas fa-home me-3">East Kolaka, Indonesia</i>
+            </p>
+            <p>
+              <i class="fas fa-envelope me-3">93573</i>
+            </p>
+            <p><i class="fas fa-phone me-3">muhammadilham@webmail.umm.ac.id</i> </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
       </div>
-      <hr>
-      <h5>Muhammad Ilham</h5>
-      <p>Find my social media on :</p>
-      <ul class="socials">
-        <li><a href="https://www.instagram.com/iammilham_/"><i class="bi bi-instagram"> Instagram</i></a></li>
-        <li><a href="https://www.linkedin.com/in/muhammadilham06/"><i class="bi bi-linkedin"> Linkedin</i></a></li>
-      </ul>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 footerbtm" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="fw-bold" href="https://mdbootstrap.com/">IlhamTaope</a>
     </div>
-    <div class=footerbtm>
-      <p> Copyright &copy;2021 | Created with <i class="bi bi-heart-fill"></i> by Muhammad Ilham</p>
-    </div>
+    <!-- Copyright -->
   </footer>
-  <!-- akhir footer -->
+  <!-- akhir Footer -->
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -302,6 +386,21 @@
       })
     })
   </script>
+
+  <!-- nav transparent -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add('bg-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    });
+  </script>
+  <!-- akhir nav transparent -->
   <!-- akhir javascript -->
 </body>
 
