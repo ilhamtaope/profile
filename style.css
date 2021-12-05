@@ -16,6 +16,9 @@ body {
   font-family: "palatino";
   font-weight: bold;
 }
+#navbrand a:hover {
+  color: aqua;
+}
 #navbarNav {
   font-family: "palatino";
   font-weight: bold;
@@ -27,9 +30,7 @@ body {
 #navbarNav li a:hover {
   color: aqua;
 }
-#jumbotron {
-  background-color: cadetblue;
-}
+
 #jumbotron .carousel-caption {
   text-align: left;
 }
