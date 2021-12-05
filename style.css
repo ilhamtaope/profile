@@ -24,8 +24,9 @@ body {
   font-weight: bold;
 }
 #navbarNav li {
-  padding-right: 20px;
+  padding-right: 18px;
   font-size: 18px;
+  display: cover;
 }
 #navbarNav li a:hover {
   color: aqua;
