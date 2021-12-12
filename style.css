@@ -11,13 +11,13 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
-
+/* navbar */
 .navbar-brand {
   font-family: "palatino";
   font-weight: bold;
 }
 #navbrand a:hover {
-  color: aqua;
+  color: rgb(138, 247, 247);
 }
 #navbarNav {
   font-family: "palatino";
@@ -29,30 +29,73 @@ body {
   display: cover;
 }
 #navbarNav li a:hover {
-  color: aqua;
+  color: rgb(138, 247, 247);
 }
+/* akhir navbar */
 
-#jumbotron .carousel-caption {
-  text-align: left;
+/* jumbotron */
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.hero-content {
+  position: relative;
+  font-family: "palatino";
+  color: white;
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.hero-title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+}
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+/* akhir jumbotron */
+
+/* about */
 .about {
   text-align: center;
   font-family: "palatino";
-  margin-top: 8vw;
-  margin-bottom: 5vw;
+  margin-top: 6vw;
+  margin-bottom: 6vw;
   color: #231f20;
 }
 .btnabout .btn {
-  background-color: #2a476d;
-  color: white;
   font-family: "arial";
   font-size: 15px;
   border-radius: 25px;
   width: auto !important;
 }
 .btnabout .btn:hover {
-  color: aqua;
+  background-color: rgb(138, 247, 247);
+  color: #0f1022;
 }
+/* akhir about */
+
+/* mycarousel */
 .mycarousel {
   padding-top: 50px;
 }
@@ -67,7 +110,6 @@ body {
   font-size: 5vw;
   text-align: center;
 }
-
 .carousel-caption p {
   text-align: center;
   font-style: italic;
@@ -78,7 +120,9 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+/* akhir mycarousel */
 
+/* mystory */
 .mystory {
   text-align: center;
   color: #231f20;
@@ -87,26 +131,36 @@ body {
   font-family: "palatino";
   padding-top: 30px;
 }
-.card-body .btn:hover {
-  color: aqua;
+#mystory .card-body .btn:hover {
+  color: aqua !important;
 }
-button :hover {
-  color: aqua;
-}
+
+/* akhir mystory */
+
+/* contactme */
 #contactme {
   margin-bottom: 50px;
 }
 .contactme {
   text-align: center;
   color: #231f20;
-  padding-top: 30px;
-  margin-bottom: 20px;
+  padding-top: 6vw;
+  margin-bottom: 6vw;
   font-family: "palatino";
+  text-align: center;
+}
+/* akhir contactme */
+
+/* video */
+video {
+  display: inline-block;
 }
 .video {
-  display: inline-block;
-  padding-top: 30px;
+  border-radius: 20 solid red;
 }
+/* akhir video */
+
+/* footer */
 .footerbtm {
   background-color: #0f1022;
   width: 100vw;
@@ -136,3 +190,4 @@ button :hover {
 .footerbtm a:hover {
   color: aqua;
 }
+/* akhir footer */
